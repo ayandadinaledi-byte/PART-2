@@ -1,0 +1,121 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: goldenrod; /* Light background */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: goldenrod;
+    padding: 10px;
+}
+header img {
+    display: block;
+    margin: 0 auto;
+}
+nav {
+    margin-top: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Slideshow */
+.slideshow {
+    position: relative;
+    width: 100%;          /* Full width */
+    max-width: 800px;     /* Limit size */
+    height: 400px;        /* Taller block */
+    margin: 20px auto;
+    overflow: hidden;
+    border: 3px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;          /* Fill container */
+    height: 100%;         /* Fill container */
+    object-fit: cover;    /* Cover entire block */
+    opacity: 0;
+    animation: slideShow 16s infinite;
+}
+
+/* Animation delays */
+.slideshow img:nth-child(1) { animation-delay: 0s; }
+.slideshow img:nth-child(2) { animation-delay: 4s; }
+.slideshow img:nth-child(3) { animation-delay: 8s; }
+.slideshow img:nth-child(4) { animation-delay: 12s;}
+.slideshow img:nth-child(5) { animation-delay: 16s;}
+
+
+@keyframes slideShow {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    25% { opacity: 1; }
+    35% { opacity: 0; }
+    100% { opacity: 0; }
+}
+/* Gallery Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px;
+}
+
+.gallery img {
+    width: 100%;          /* Fill grid cell width */
+    height: 250px;        /* Fixed uniform height */
+    object-fit: cover;    /* Crop to fit without distortion */
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;        /* Uniform height */
+    object-fit: cover;    /* Ensures same size */
+    border-radius: 6px;
+    border: 2px solid #ccc;
+}
+.item p {
+    font-weight: bold;
+    margin-top: 8px;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+

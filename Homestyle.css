@@ -1,0 +1,56 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: goldenrod; /* Light background */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+main{
+background-image: url(Images/image2.jpg);
+}
+
+/* Header */
+header {
+    background: #333;
+    color: goldenrod;
+    padding: 10px;
+}
+header img {
+    display: block;
+    margin: 0 auto;
+}
+nav {
+    margin-top: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2c2c2c;
+  font-size: 1.5rem;
+}
+
+/* Footer */
+footer {
+  background-color: rgba(44, 44, 44, 0.9);
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-top: 3px solid black;
+}
